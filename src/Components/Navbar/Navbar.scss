@@ -1,0 +1,67 @@
+.navbar {
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    top:0;
+    background: linear-gradient(to top, transparent 0%, rgb(0,0,0,0.4) 50%);
+
+    &.scrolled {
+        background-color: var(--main-color);
+    }
+    transition: all ease 0.5s;
+
+    .container {
+        height: 8vh;
+        display: flex;
+        padding: 0px 60px;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            display: flex;
+            align-items: center;
+            .logo-img {
+                height: 2em;
+                margin-right: 40px;
+            }
+            span{
+                cursor: pointer;
+                margin-right: 30px;
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            .usr-profile-img {
+                height: 2.5em;
+                border-radius: 20px;
+                object-fit: cover;
+                cursor: pointer;
+            }
+            .nav-right-icons {
+                margin: 0px 20px;
+                cursor: pointer;
+            }
+            .nav-dropdown-options {
+                .options {
+                    display: none;
+                    background-color: #222222;
+                    border-radius: 5px;
+                }
+                span {
+                    padding: 10px;
+                    cursor: pointer;
+                }
+                &:hover {
+                    .options{
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
