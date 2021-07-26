@@ -1,0 +1,85 @@
+.featured {
+    height: 90vh;
+    position: relative;
+
+    .category {
+        position: absolute;
+        top: 15vh;
+        left: 5vw;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        display: flex;
+        align-items: center;
+        select {
+            cursor: pointer;
+            color: white;
+            background-color: var(--main-color);
+            border: 1px solid rgb(117, 117, 117);
+            border-radius: 0px;
+            margin-left: 20px;
+            padding: 5px;
+        }
+    }
+
+    .featured-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .featured-info {
+        width: 35%;
+        position: absolute;
+        left: 5vw;
+        top: 35vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        img {
+            min-width: 35vw;
+            max-width: 35vw;
+        }
+        .description {
+            margin: 2.5vh 0px;
+            color: rgb(250, 250, 250);
+        }
+
+        .buttons {
+            display: flex;
+            button {
+                padding: 10px 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                border-radius: 5px;
+
+                margin-right: 10px;
+                font-size: 18px;
+                font-weight: 500;
+                cursor: pointer;
+
+                &.play {
+                    background-color: rgb(197, 36, 36);
+                    color: white;
+                }
+                &.info {
+                    background-color: rgb(83, 83, 83);
+                    color: white;
+                }
+
+                span {
+                    margin-right: 5px;
+                }
+
+                transition: all ease 0.5s;
+                &:hover {
+                    box-shadow: 0px 0px 10px rgba(36, 36, 36, 0.918);    
+                    filter: brightness(85%);
+                }
+
+            }
+        }
+    }
+}
