@@ -1,7 +1,7 @@
 import React from 'react';
-import Featured from '../Components/Featured/Featured';
-import List from '../Components/List/List';
-import Navbar from '../Components/Navbar/Navbar';
+import Featured from '../../Components/Featured/Featured';
+import List from '../../Components/List/List';
+import Navbar from '../../Components/Navbar/Navbar';
 import "./home.scss";
 
 const  Home = () => {

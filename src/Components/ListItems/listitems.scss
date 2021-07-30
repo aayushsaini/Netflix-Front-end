@@ -1,6 +1,101 @@
 .list-items {
     width: 225px;
     height: 125px;
-    background-color: white;
-    margin-right: 10px;
+    background-color: var(--main-color);
+    margin-right: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+
+    // transition: all ease 0.5s;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:hover {
+        background-color: rgba(27, 27, 27, 0.699);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        // May change above to simple 31,31,31 rgb bg
+        width: 325px;
+        height: auto;
+        position: absolute;
+        top: -150px;
+        box-shadow: 0px -3px 36px 4px rgba(0,0,0,1);
+        -webkit-box-shadow: 0px -3px 36px 4px rgba(0,0,0,1);
+        -moz-box-shadow: 0px -3px 36px 4px rgba(0,0,0,1);
+        border-radius: 5px;
+        z-index: 2;
+
+        img {
+            height: 160px;
+        }
+
+        video {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .item-info-sec {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0.6rem;
+            margin-left: 0.8rem;
+            margin-right: 0.8rem;
+            // mar  0.7rem;
+
+            .icons {
+                display: flex;
+                margin-bottom: 0.6rem;
+                
+                .icon {
+                    // border: 2px solid white;
+                    // border-radius: 50px;
+                    // font-size: 1.6rem;
+                    margin-right: 1rem;
+                    cursor: pointer;
+                }
+            }
+            
+            .item-info-text {
+                display: flex;
+                align-items: center;
+                font-size: 0.9rem;
+                font-weight: 600;
+                color: rgb(163, 163, 163);
+
+                .age-limit {
+                    border: 1.5px solid;
+                    border-radius: 50px;
+                    padding: 0rem 0.5rem;
+                    font-size: 0.7rem;
+                }
+
+                span {
+                    margin-right: 1rem;
+                    margin-bottom: 0.4rem;
+                }
+            }
+
+            .item-info-description {
+                font-size: 0.9rem;
+                margin-bottom: 0.5em;
+            }
+
+            .item-info-genre {
+                font-size: 0.9rem;
+                font-weight: 500;
+                color: rgb(177, 177, 177);
+                margin-bottom: 0.8rem;
+            }
+
+        }
+    }
 }

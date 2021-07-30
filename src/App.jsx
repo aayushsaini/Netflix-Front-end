@@ -1,9 +1,11 @@
 import "./app.scss";
-import Home from "./Home/Home";
+// import Home from "./Pages/Home/Home";
+import Watch from "./Pages/Watch/Watch";
 
 const App = () => {
   return (
-    <Home />
+    // <Home />
+    <Watch />
   );
 };
 
