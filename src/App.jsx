@@ -1,13 +1,15 @@
 import "./app.scss";
-// import Home from "./Pages/Home/Home";
+import Login from "./Pages/Login/Login";
+import Home from "./Pages/Home/Home";
 import Register from "./Pages/Register/Register";
-// import Watch from "./Pages/Watch/Watch";
+import Watch from "./Pages/Watch/Watch";
 
 const App = () => {
   return (
-    // <Home />
+    <Home />
     // <Watch />
-    <Register />
+    // <Register />
+    // <Login />
   );
 };
 
