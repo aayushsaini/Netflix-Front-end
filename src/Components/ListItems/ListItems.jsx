@@ -13,7 +13,7 @@ const ListItem = (props) => {
     const [isHovered, setIsHovered] = useState(false);
     // console.log(currentIndex);
 
-    const trailer =  "https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761";
+    const trailer =  "https://vod-progressive.akamaized.net/exp=1627708407~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4104%2F18%2F470523821%2F2093541345.mp4~hmac=16bfd7ff5b228071fa9c74cad060b02beb7fa4f31565c70bd088a393b94d6345/vimeo-prod-skyfire-std-us/01/4104/18/470523821/2093541345.mp4";
 
     return (
         <div className="list-items" 
